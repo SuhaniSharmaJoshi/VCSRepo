@@ -21,8 +21,8 @@ resource "aws_security_group" "ssh_sg" {
    ingress {
     from_port = 80
     to_port = 80
-    protocol = "http"
-    cidr_blocks = ["47.186.55.11/32"]
+    protocol = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
   }
   
   egress {
