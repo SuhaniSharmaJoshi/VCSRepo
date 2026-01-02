@@ -3,6 +3,9 @@ resource "aws_instance" "exampleEC2" {
   instance_type = var.instance_type
   key_name      = var.key_name
 
+vpc_security_group_ids = [
+    aws_security_group.ssh_sg.id
+  ]
 
 }
 resource "aws_security_group" "ssh_sg" {
