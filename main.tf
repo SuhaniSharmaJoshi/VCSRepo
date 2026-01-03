@@ -6,7 +6,7 @@ resource "aws_instance" "exampleEC2" {
 vpc_security_group_ids = [
     aws_security_group.ssh_sg.id
   ]
-
+ user_data = file("user_data.sh")
 }
 resource "aws_security_group" "ssh_sg" {
   name = "ssh-access"
