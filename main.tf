@@ -33,3 +33,8 @@ resource "aws_security_group" "ssh_sg" {
   }
   
 }
+resource "aws_eip" "example_eip" {
+   instance = aws_instance.exampleEC2.id
+
+   
+}
