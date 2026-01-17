@@ -1,0 +1,54 @@
+############################
+# Terraform
+############################
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+############################
+# Terraform variables & secrets
+############################
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+############################
+# Terraform Cloud local files
+############################
+terraform.rc
+credentials.tfrc.json
+
+############################
+# Sentinel (if not tracked)
+############################
+*.sentinel
+
+############################
+# Environment files
+############################
+.env
+.env.*
+
+############################
+# Python / virtual env (if used)
+############################
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+############################
+# macOS
+############################
+.DS_Store
+
+############################
+# VS Code
+############################
+.vscode/
