@@ -5,4 +5,4 @@ yum install -y httpd
 systemctl start httpd
 systemctl enable httpd
 
-echo "Hello from terraform user_data on $(hostname)" > /var/www/html/index.html
+echo "Hello from Terraform user_data on $(hostname)" > /var/www/html/index.html
